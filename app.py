@@ -1,6 +1,13 @@
-from flask import Flask
+from mmap import PROT_WRITE
+from flask import Flask, Response
+import os
 
 app = Flask(__name__)
+porta = os.environ.get("APP_PORT")
+
+@app.route("/health")
+def health():
+    return Response("ok", status=200)
 
 @app.route("/")
 def hello_world():
@@ -8,4 +15,4 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=True)
+    app.run(host="0.0.0.0", port=porta, debug=True)
