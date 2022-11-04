@@ -4,6 +4,7 @@ import os
 
 app = Flask(__name__)
 porta = os.environ.get("APP_PORT")
+contador = 0
 
 @app.route("/health")
 def health():
@@ -12,6 +13,13 @@ def health():
 @app.route("/")
 def hello_world():
     return "teste"
+
+@app.route("/counter")
+def counter():
+    global contador
+    contador += 1
+    
+    return str(contador+'\n')
 
 
 if __name__ == "__main__":
