@@ -19,7 +19,7 @@ def counter():
     global contador
     contador += 1
     
-    return str(contador+'\n')
+    return str(contador)+'\n'
 
 
 if __name__ == "__main__":
