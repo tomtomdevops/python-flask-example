@@ -1,0 +1,749 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo reboot
+    4  sudo snap disable docker
+    5  sudo snap enable docker
+    6  docker ps -a
+    7  exit
+    8  echo -e 'alias kubectl="microk8s kubectl"' >> ~/.bash_aliases
+    9  source ~/.bashrc
+   10  curl https://pyenv.run | bash
+   11  tee -a ~/.bashrc <<'EOF'
+   12  # Load pyenv
+   13  export PYENV_ROOT="$HOME/.pyenv"
+   14  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+   15  eval "$(pyenv init -)"
+   16  # Load pyenv-virtualenv automatically
+   17  eval "$(pyenv virtualenv-init -)"
+   18  EOF
+   19  source ~/.bashrc
+   20  sudo apt-get install -y     make     build-essential     libssl-dev     zlib1g-dev     libbz2-dev     libreadline-dev     libsqlite3-dev     wget     curl     llvm     libncursesw5-dev     xz-utils     tk-dev     libxml2-dev     libxmlsec1-dev     libffi-dev     liblzma-dev
+   21  pyenv install 3.10.7
+   22  sudo apt update
+   23  sudo apt upgrade
+   24  pyenv install 3.10.7
+   25  sudo apt-get install -y     make     build-essential     libssl-dev     zlib1g-dev     libbz2-dev     libreadline-dev     libsqlite3-dev     wget     curl     llvm     libncursesw5-dev     xz-utils     tk-dev     libxml2-dev     libxmlsec1-dev     libffi-dev     liblzma-de
+   26  sudo apt-get install -y     make     build-essential     libssl-dev     zlib1g-dev     libbz2-dev     libreadline-dev     libsqlite3-dev     wget     curl     llvm     libncursesw5-dev     xz-utils     tk-dev     libxml2-dev     libxmlsec1-dev     libffi-dev     liblzma-dev
+   27  pyenv install 3.10.7
+   28  python3 version
+   29  python version
+   30  pyenv install 3.10.7
+   31  sudo apt-get install -y     make     build-essential     libssl-dev     zlib1g-dev     libbz2-dev     libreadline-dev     libsqlite3-dev     wget     curl     llvm     libncursesw5-dev     xz-utils     tk-dev     libxml2-dev     libxmlsec1-dev     libffi-dev     liblzma-dev
+   32  pyenv global 3.10.7
+   33  git clone https://github.com/Lohann/python-flask-example.git
+   34  cd python-flask-example
+   35  pyenv install
+   36  clear
+   37  pyenv virtualenv aula-kubernetes
+   38  pyenv activate aula-kubernetes
+   39  python --version
+   40  microk8s enable registry
+   41  docker build . -t localhost:32000/app-flask:latest
+   42  docker ps -a
+   43  sudo addgroup --system docker
+   44  sudo adduser $USER docker
+   45  newgrp docker
+   46  exit
+   47  sudo snap install microk8s --classic --channel=1.25
+   48  sudo usermod -a -G microk8s $USER
+   49  sudo chown -f -R $USER ~/.kube
+   50  newgrp microk8s
+   51  exit
+   52  sudo snap install docker
+   53  sudo addgroup --system docker
+   54  sudo adduser $USER docker
+   55  newgrp docker
+   56  exit
+   57  cd python-flask-example/
+   58  ls
+   59  pyenv activate aula-kubernetes
+   60  docker ps -a
+   61  docker build . -t localhost:32000/app-flask:latest
+   62  microk8s enable registry
+   63  docker build . -t localhost:32000/app-flask:latest
+   64  df -h
+   65  docker build . -t localhost:32000/app-flask:latest
+   66  ls
+   67  docker build . -t localhost:32000/app-flask:latest
+   68  docker login
+   69  docker build . -t localhost:32000/app-flask:latest
+   70  docker push localhost:32000/app-flask:latest
+   71  kubectl create -f app.pod.ym
+   72  microk8s enable registry
+   73  pyenv activate aula-kubernetes
+   74  docker push localhost:32000/app-flask:latest
+   75  kubectl get pods
+   76  python --version
+   77  docker build . -t localhost:32000/app-flask:latest
+   78  docker image ps
+   79  docker  ps -a
+   80  docker image ls
+   81  docker push localhost:32000/app-flask:latest
+   82  pyenv activate aula-kubernetes
+   83  kubectl create -f app.pod.yml
+   84  kubectl ps -a
+   85  kubectl ps
+   86  exit
+   87  cd python-flask-example/
+   88  ls
+   89  touch app.deployment.yml
+   90  vim app.deployment.yml 
+   91  docker push localhost:32000/app-flask:latest
+   92  df -h
+   93  kubectl get pods
+   94  ls
+   95  vim my-app.pod.yml
+   96  kubectl get pod
+   97  ls
+   98  kubectl get all
+   99  kubectl delete pod my-app.pod.yml 
+  100  kubectl delete pod my-app
+  101  kubectl apply -f app.deployment.yml 
+  102  vim app.deployment.yml 
+  103  kubectl apply -f app.deployment.yml 
+  104  vim app.deployment.yml 
+  105  kubectl apply -f app.deployment.yml 
+  106  kubectl get all
+  107  touch app2.deployment.yml
+  108  vim app2.deployment.yml 
+  109  vi app2.deployment.yml 
+  110  kubectl apply -f app2.deployment.yml 
+  111  kubectl apply -f app.deployment.yml 
+  112  vim app.deployment.yml 
+  113  kubectl apply -f app.deployment.yml 
+  114  vim app.deployment.yml 
+  115  kubectl apply -f app.deployment.yml 
+  116  kubectl get pods
+  117  ls
+  118  docker push localhost:32000/app-flask:latest
+  119  clear
+  120  docker image ls
+  121  docker tag 7e15ebd9cb8e localhost:32000/app-flask:latest
+  122  docker push localhost:32000/app-flask:latest
+  123  ping localhost:32000
+  124  curl localhost:32000
+  125  vim /etc/docker/daemon.json
+  126  sudo vim /etc/docker/daemon.json
+  127  docker ps -a
+  128  which docker
+  129  sudo systemctl restart docker
+  130  sudo snap disable docker
+  131  sudo snap enable docker
+  132  docker push localhost:32000/app-flask:latest
+  133  htop
+  134  sudo reboot
+  135  ip addr
+  136  ls
+  137  ls -a
+  138  cd .ssh/
+  139  ls 
+  140  cat authorized_keys 
+  141  ip addr
+  142  df -h
+  143  sudo apt-get install openssh-server 
+  144  sudo systemctl enable ssh
+  145  ip addr
+  146  ls
+  147  cat authorized_keys
+  148  pyenv install 3.10.7
+  149  apt update
+  150  sudo apt-get update
+  151  sudo apt-get upgrade
+  152  pyenv install 3.10.7
+  153  p7env install 3.10.7
+  154  sudo apt install libnss3-tools
+  155  pyenv install 3.10.7
+  156  p7env install 3.10.7
+  157  cd python-flask-example/
+  158  ls
+  159  clear
+  160  docker push localhost:32000/app-flask:latest
+  161  sudo vim /etc/hosts
+  162  docker push ip6-localhost:32000/app-flask:latest
+  163  docker build . -t 127.0.0.1:32000/app-flask:latest
+  164  docker push 127.0.0.1:32000/app-flask:latest
+  165  sudo vim /var/snap/docker/current/etc/docker/daemon.json
+  166  sudo snap disable docker
+  167  sudo snap enable docker
+  168  sudo systemctl status snap.docker.dockerd.service
+  169  docker push 127.0.0.1:32000/app-flask:latest
+  170  microk8s enable registry
+  171  microk8s ctr images ls
+  172  microk8s ctr help
+  173  microk8s help
+  174  microk8s addons help
+  175  microk8s addons
+  176  microk8s addons --help
+  177  docker image ls
+  178  docker save localhost:32000/app-flask > myimage.tar
+  179  microk8s ctr image import myimage.tar
+  180  microk8s ctr images ls
+  181  kubectl create -f app.pod.yml 
+  182  kubectl get all
+  183  kubectl delete -f app.pod.yml 
+  184  kubectl delete -f app.deployment.yml 
+  185  kubectl get all
+  186  kubectl create -f app.pod.yml 
+  187  kubectl get all
+  188  vim app.pod.yml 
+  189  kubectl delete -f app.pod.yml 
+  190  kubectl create -f app.pod.yml 
+  191  kubectl get all
+  192  docker push localhost:32000/app-flask:latest
+  193  multipass list
+  194  docker push localhost:32000/app-flask:latest
+  195  kubectl get pods
+  196  ls
+  197  kubectl apply -f app.deployment.yml 
+  198  kubectl get pods
+  199  vim app.deployment.yml 
+  200  vim app.pod.yml 
+  201  vim app.deployment.yml 
+  202  kubectl apply -f app.deployment.yml 
+  203  kubectl get pods
+  204  curl localhost:32000
+  205  hostname -I
+  206  exit
+  207  pyenv shell 3.10.7
+  208  ls
+  209  docker container ls
+  210  microk8s kubectl exec --stdin --tty my-app -- /bin/sh
+  211  microk8s kubectl exec --stdin --tty crazy_saha -- /bin/sh
+  212  docker image ps
+  213  docker image ls -a
+  214  docker image prune
+  215  docker container -ls 
+  216  docker container ls 
+  217  docker container prune
+  218  docker build . -t localhost:32000/app-flask:latest 
+  219  docker save localhost:32000/app-flask > myimage.tar
+  220  microk8s ctr image import myimage.tar 
+  221  docker container run --rm -d -e APP_PORT=3500 localhost:32000/app-flask:latest 
+  222  microk8s kubectl create -f app.pod.yml 
+  223  get pods
+  224  kubectl get pods
+  225  kubectl delete app.pod.yml 
+  226  kubectl delete -f pod
+  227  kubectl delete -f app.pod.yml 
+  228  kubectl get all
+  229  pyenv shell 3.10.7
+  230  pip3 install -r requirements.txt 
+  231  python version
+  232  sudo apt install pythone-pip
+  233  sudo apt install python-pip
+  234  sudo apt install python3-pip
+  235  clear
+  236  python3 app.py
+  237  git checkout -b kubernets/desafio-01
+  238  git checkout kubernets/desafio-01 
+  239  git branch
+  240  git add .
+  241  git diff
+  242  git commit -am "teste"
+  243  git push origin kubernets/desafio-01 
+  244  git diff
+  245  git status
+  246  APP_PORT=3500 python3 app.py
+  247  APP_PORT=3600 python3 app.py
+  248  git add .
+  249  git status
+  250  git commit -am "Arquivo atualizado"
+  251  git push origin kubernets/desafio-01 
+  252  APP_PORT=3600 python3 app.py
+  253  docker build . -t localhost:32000/app-flask:latest 
+  254  docker run --rm -d -e APP_PORT=3500 -p 3500:3500 localhost:32000/app-flask:latest 
+  255  kubectl get pods
+  256  kubectl delet -f my-app-6c847485fb-tx5p7
+  257  kubectl delete -f my-app-6c847485fb-tx5p7
+  258  kubectl get pods
+  259  ls
+  260  kubectl delet -f app.pod.yml 
+  261  kubectl delete -f app.pod.yml 
+  262  APP_PORT=3500 python3 app.py
+  263  APP_PORT=3000 python3 app.py
+  264  git version
+  265  git config --global user.name tomtomdevops
+  266  git config --global user.email rayzer.cs@hotmail.com
+  267  git config --global core.autocrlf false
+  268  git config --global core.filemode false
+  269  git config --global color.ui true
+  270  ssh-keygen -o -t ed25519 -C "rayzer.cs@hotmail.com" -N "" -f ~/.ssh/id_ed25519
+  271  cat ~/.ssh/id_ed25519.pub
+  272  cat ~/.ssh/id_ed25519
+  273  git@github.com:Lohann/python-flask-example.git
+  274  ls
+  275  rm -f python-flask-example/
+  276  rm  python-flask-example/
+  277  mkdir nova
+  278  cd nova/
+  279  git@github.com:tomtomdevops/python-flask-example.git
+  280  git clone git@github.com:tomtomdevops/python-flask-example.git
+  281  cd ..
+  282  ls
+  283  ls
+  284  cd ..
+  285  rmdir python-flask-example/
+  286  cd nova/
+  287  git clone git@github.com:tomtomdevops/python-flask-example.git
+  288  ls
+  289  git clone git@github.com:tomtomdevops/python-flask-example.git
+  290  ls
+  291  cd ..
+  292  ls
+  293  cd nova/
+  294  cd python-flask-example/
+  295  ls
+  296  cat app.py 
+  297  ip a
+  298  ip addt
+  299  ip addr
+  300  id host
+  301  ip addr
+  302  ping localhost
+  303  ping ubuntu
+  304  ip addr
+  305  sudo ifconfig
+  306  ifconfig
+  307  ifconfig
+  308  sudo vim /etc/ssh/ssh_config
+  309  sudo system restart ssh
+  310  sudo systemcl restart ssh
+  311  sudo systemctl restart ssh
+  312  ls
+  313  cd nova/
+  314  ls
+  315  cd python-flask-example/
+  316  ls
+  317  cd python-flask-example/
+  318  ls
+  319  cat my-app.pod.yml 
+  320  vim my-app.pod.yml 
+  321  sudo cat my-app.pod.yml 
+  322  my-app.pod.yml
+  323  pyenv shell 3.10.7
+  324  ls
+  325  git clone git@github.com:tomtomdevops/python-flask-example.git
+  326  ls
+  327  git remove python-flask-example/
+  328  rm -f python-flask-example/
+  329  rmdir -f python-flask-example/
+  330  rmdir  python-flask-example/
+  331  rmdir python-flask-example/
+  332  ls
+  333  rm -rf python-flask-example/.git 
+  334  ls
+  335  rm -rf python-flask-example.git 
+  336  ls
+  337  rm -rf python-flask-example
+  338  ls
+  339  git status
+  340  git add.
+  341  git add .
+  342  ls
+  343  git diff
+  344  git status
+  345  git commit -am "teste" && git push
+  346  git branch
+  347  ls
+  348  git pull
+  349  git init
+  350  ls
+  351  git add .
+  352  git commit -am "teste de commit" && git push origin kubernets/desafio-01 
+  353  git status
+  354  git diff
+  355  tig
+  356  git commit -am "teste de commit"
+  357  git branch
+  358  git pull
+  359  cat Dockerfile 
+  360  git commit -a -m "teste"
+  361  git statys
+  362  git status
+  363  git add .
+  364  git diff
+  365  git status
+  366  git commit -a -m "teste"
+  367  git push origin kubernets/desafio-01 
+  368  ls
+  369  mv myimage.tar ~/
+  370  ls
+  371  python3 app.py 
+  372  python3 app.py APP_PORT=3100
+  373  APP_PORT=3100 python3 app.py 
+  374  git add .
+  375  git status
+  376  git commit -am "Alteração"
+  377  git push origin kubernets/desafio-01 
+  378  git status
+  379  git add .
+  380  git commit -m "nova alteração"
+  381  git push origin kubernets/desafio-01
+  382  ls
+  383  ls -a
+  384  ls -la
+  385  cd ..
+  386  ls
+  387  cd ..
+  388  ls
+  389  cd python-flask-example/
+  390  ls
+  391  rm myimage.tar 
+  392  ls
+  393  cat app.py
+  394  ls
+  395  cd ..
+  396  ls
+  397  rm myimage.tar 
+  398  rmir -f python-flask-example/
+  399  rmdir -f python-flask-example/
+  400  rm -f python-flask-example/
+  401  rm  python-flask-example/
+  402  rmdir python-flask-example/
+  403  rm -f python-flask-example/
+  404  rm -f python-flask-example
+  405  rmdir  python-flask-example
+  406  cd nova/
+  407  ls
+  408  cd python-flask-example/
+  409  ls
+  410  cat app.py 
+  411  git add .
+  412  git push origin kubernets/desafio-01
+  413  git status
+  414  git LOG
+  415  git log
+  416  git rebase -i HEAD~2
+  417  git rebase 
+  418  git rebase -i HEAD~1
+  419  git log
+  420  git rebase -i HEAD~1
+  421  git log
+  422  git reset  HEAD~1
+  423  git log
+  424  git reset  HEAD~1
+  425  git log
+  426  git reset  HEAD~1
+  427  git status
+  428  git add .
+  429  git commit -am "Nova versão"
+  430  git push origin kubernets/desafio-01 
+  431  git pull
+  432  git push origin kubernets/desafio-01 
+  433  git checkout main
+  434  ls
+  435  git checkout ls
+  436  git branch
+  437  git branch -d kubernets/desafio-01 
+  438  ls
+  439  git branch
+  440  git branch -d kubernets/desafio-01
+  441  git branch -D kubernets/desafio-01
+  442  git branch kubernets/desafio-01
+  443  git checkout kubernets/desafio-01 
+  444  git branch
+  445  git add .
+  446  git commit -am "nova versao"
+  447  git push origin kubernets/desafio-01 
+  448  cd ..
+  449  rm -f python-flask-example/
+  450  ls
+  451  rmdir -f python-flask-example/
+  452  rmdir -f python-flask-example
+  453  sudo rm -f python-flask-example
+  454  rm -rf python-flask-example/
+  455  ls
+  456  git clone git@github.com:tomtomdevops/python-flask-example.git
+  457  ls
+  458  cd python-flask-example/
+  459  ls
+  460  cat app.py
+  461  vim app.py
+  462  vim Dockerfile 
+  463  vim app.pod.yml 
+  464  cat app.py
+  465  git status
+  466  git add .
+  467  git commit -am "Nova versão"
+  468  ls
+  469  git branch
+  470  git branch kubernets/desafio-01
+  471  git checkout kubernets/desafio-01 
+  472  git branch
+  473  ls
+  474  cat app.py
+  475  git add .
+  476  git commit -am "nova versão"
+  477  git push origin kubernets/desafio-01 
+  478  git pull
+  479  git push origin kubernets/desafio-01 
+  480  git log
+  481  git rebase -i HEAD~2
+  482  git log
+  483  git status
+  484  git diff
+  485  git pull
+  486  git push origin kubernets/desafio-01 
+  487  git reset HEAD~1
+  488  git status
+  489  git log
+  490  git branch
+  491  git add .
+  492  git commit -a -m "Nova versão"
+  493  git push origin kubernets/desafio-01 
+  494  git reset HEAD~1
+  495  git pull
+  496  git pull origin kubernets/desafio-01 
+  497  git merge kubernets/desafio-01 
+  498  git statu
+  499  git add .
+  500  git commit -a -m "Novo"
+  501  git pull origin kubernets/desafio-01 
+  502  git push origin kubernets/desafio-01 
+  503  git reset HEAD~1
+  504  git merge kubernets/desafio-01 
+  505  git add .
+  506  git status
+  507  git commit -am "novo commit"
+  508  git push origin kubernets/desafio-01 
+  509  git push --help
+  510  ls
+  511  docker build . -t localhost:32000/app-flask:latest
+  512  microk8s enable registry
+  513  microk8s inspect
+  514  git status
+  515  git branch
+  516  cd ..
+  517  ls
+  518  rm -rf python-flask-example/
+  519  ls
+  520  git clone https://github.com/tomtomdevops/python-flask-example.git
+  521  ls
+  522  cd python-flask-example/
+  523  touch app.deployment.yml
+  524  ls
+  525  kubectl create -f app.deployment.yml 
+  526  ls
+  527  kubectl delete -f app.deployment.yml 
+  528  kubectl get all
+  529  kubectl create -f app.deployment.yml
+  530  kubectl get pods -o wide
+  531  kubectl image ls
+  532  kubectl images ls
+  533  kubectl ls
+  534  kubectl --help
+  535  ls
+  536  docker build . -t localhost:32000/app-flask:latest
+  537  kubectl delete -f app.deployment.yml 
+  538  docker push localhost:32000/app-flask:latest
+  539  microk8s ctr image import
+  540  kubectl create -f app.deployment.yml
+  541  kubectl get pods -o wide
+  542  curl 10.1.243.230:3000/counter
+  543  docker build . -t localhost:32000/app-flask:latest
+  544  docker push localhost:32000/app-flask:latest
+  545  kubectl delete -f app.deployment.yml 
+  546  kubectl create -f app.deployment.yml
+  547  kubectl get pods -o wide
+  548  curl 10.1.243.231:300/counter
+  549  curl 10.1.243.231:3000/counter
+  550  curl 10.1.243.233:3000/counter
+  551  curl 10.1.243.232:3000/counter
+  552  history
+  553  ipaddr
+  554  host -i
+  555  hostname -I
+  556  ls
+  557  cd nova/
+  558  ls
+  559  df -h
+  560  cd ..
+  561  ls
+  562  cd nova
+  563  cd python-flask-example/
+  564  ls
+  565  cat app.py 
+  566  hostname -I
+  567  cd nova
+  568  ls
+  569  cd python-flask-example/
+  570  ls
+  571  kubectl delete -f app.deployment.yml
+  572  cd ..
+  573  sudo reboot
+  574  pyenv shell 3.10.7
+  575  kubectl get pods -o wide
+  576  kubeclt enable registry
+  577  kubectl enable registry
+  578  microk8s enable registry
+  579  kubectl get pods -o wide
+  580  microk8s inspect
+  581  kubectl get pods all
+  582  kubectl get pods
+  583  kubectl delete -f app.deployment.yml 
+  584  ls
+  585  kubectl image ls
+  586  kubectl images ls
+  587  kubectl image ls
+  588  kubectl images ls
+  589  kubectl get pods
+  590  microk8s enable registry
+  591  docker build . -t localhost:32000/app-flask:lates
+  592  docker build . -t localhost:32000/app-flask:latest
+  593  docker push localhost:32000/app-flask:latest
+  594  kubectl images ls
+  595  kubectl get pods -o wide
+  596  microk8s ctr image import
+  597  docker build . -t localhost:32000/app-flask:latest 
+  598  docker build . -t localhost:32000/app-flask:latest
+  599  docker container prune
+  600  kubectl delete -f app.deployment.yml
+  601  ls
+  602  cd python-flask-example/
+  603  ls
+  604  kubectl delete -f app.deployment.yml
+  605  docker build . -t localhost:32000/app-flask:latest
+  606  docker push localhost:32000/app-flask:latest
+  607  microk8s ctr image import
+  608  kubectl create -f app.deployment.yml
+  609  kubectl get pods -o wide
+  610  kubectl delete -f app.deployment.yml
+  611  kubectl get pods -o wide
+  612  kubectl delete pod app.deployment.yml 
+  613  kubectl get pods -o wide
+  614  kubectl get pods -o wide
+  615  kubectl get pods -o wide
+  616  docker build . -t localhost:32000/app-flask:latest
+  617  docker push localhost:32000/app-flask:latest
+  618  kubectl get pods -o wide
+  619  microk8s ctr image import
+  620  kubectl get all
+  621  kubectl delete pod app.deployment.yml
+  622  kubectl delete pod my-app-6575df98ff-w9w2s
+  623  kubectl get all
+  624  kubectl delete pod pod-three
+  625  kubectl get all
+  626  kubectl delete pod app.deployment.yml 
+  627  kubectl delete pod app.deployment.yml
+  628  kubectl delete /my-app-6575df98ff-w9w2s --force --grace-period=0 --namespace=default
+  629  kubectl patch pod my-app-6575df98ff-w9w2s -p '{"metadata":{"finalizers":null}}
+  630  kubectl delete my-app-6575df98ff-w9w2s --force --grace-period=0 --namespace=default
+  631  kubectl delete my-app-6575df98ff-w9w2s --force
+  632  kubectl patch pod my-app-6575df98ff-w9w2s -p '{"metadata":{"finalizers":null}}'
+  633  get pods all
+  634  kubectl get pod
+  635  kubectl drain
+  636  kubectl delete pods name-of-pod --grace-period=0
+  637  kubectl delete pods my-app-6575df98ff-w9w2s --grace-period=0
+  638  kubectl delete all --all -n kubernetes/desafio-01
+  639  kubectl delete -f app.deployment.yml
+  640  ls
+  641  cat app.deployment.yml 
+  642  kubectl delete -f app.deployment.yml
+  643  kubectl delete app.deployment.yml
+  644  kubectl get all
+  645  kubectl delete all --all -n pod/my-app-6575df98ff-26vg7
+  646  kubectl delete all --all -n my-app-6575df98ff-26vg7
+  647  kubectl delete -f my-app-6575df98ff-26vg7
+  648  kubectl create -f app.deployment.yml
+  649  kubectl get all
+  650  kubectl get pods
+  651  kubectl delete -f my-app-6575df98ff-26vg7
+  652  kubectl delete -f app.deployment.yml 
+  653  kubectl get pods
+  654  kubectl delete -f app.pod.yml 
+  655  kubectl get pods
+  656  microk8s ctr image import
+  657  kubectl get pods
+  658  reboot -r 0
+  659  reboot
+  660  ls
+  661  kubeclt get all
+  662  kubectl get all
+  663  touch app.service.yml
+  664  vim app.service.yml
+  665  cat app.service.yml 
+  666  microk8s enable registry
+  667  docker build . -t localhost:32000/app-flask:latest
+  668  docker push localhost:32000/app-flask:latest
+  669  microk8s ctr image import
+  670  kubectl create -f app.service.yml
+  671  kubectl get pods
+  672  kubectl get all
+  673  kubectl create -f app.deployment.yml.yml
+  674  kubectl create -f app.deployment.yml
+  675  kubectl get all
+  676  kubect get pods
+  677  kubectl get pods
+  678  kubectl get pods -o wide
+  679  curl 10.1.243.238/counter
+  680  curl 10.1.243.238:3000/counter
+  681  kubectl create -f app.service.yml
+  682  kubectl delete -f app.service.yml.yml 
+  683  kubectl delete -f app.service.yml
+  684  kubectl create -f app.service.yml
+  685  kubectl get pods -o wide
+  686  kubect get pods
+  687  kubectl get pods
+  688  kubectl get all
+  689  curl 10.152.183.151:3000
+  690  curl 10.152.183.151
+  691  microk8s stop
+  692  sudo snap remove microk8s 
+  693  curl curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  694  sudo curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+  695  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+  696  rm ~/.bash_aliases
+  697  echo -e 'alias kubectl="minikube kubectl --"' >> ~/.bash_aliases
+  698  minikube start
+  699  minikube start --container-runtime=docker
+  700  sudo bash -c 'sed -i '"'"'/#include <abstractions\/openssl>/a owner @{HOME}\/\.minikube\/certs\/\* r,'"'"' /var/lib/snapd/apparmor/profiles/snap.docker.docker'
+  701  sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.docker.docker
+  702  eval $(minikube docker-env)
+  703  minikube version
+  704  docker ps -a
+  705  ls
+  706  docker ps -a
+  707  kubect get all
+  708  kubectl get all
+  709  docker ps -a
+  710  eval $(minikube docker-env)
+  711  docker ps -a
+  712* 
+  713  docker ps -a
+  714  kubectl get all
+  715  kubectl create -f app.service.yml
+  716  kubectl get all
+  717  minikube kubectl -- get all
+  718  kubectl get all
+  719  vim app.pod.yml 
+  720  vim app.deployment.yml 
+  721  docker build . -t app-flask:latest
+  722  kubectl create -f app.deployment.yml 
+  723  kubectl get pods
+  724  vim app.pod.yml
+  725  vim app.deployment.yml 
+  726  kubectl get pods
+  727  kubectl get all
+  728  kubectl create -f app.deployment.yml 
+  729  kubectl delete -f app.deployment.yml 
+  730  kubectl create -f app.deployment.yml 
+  731  kubectl get all
+  732  kubectl get pods
+  733  docks ps -a
+  734  kubeclt get pods -o wide
+  735  kubectl get pods -o wide
+  736  curl 172.17.0.4:3000
+  737  docker run --rm -d --p 3000:3000 --name app app-flask:latest 
+  738  docker run --rm -d -p 3000:3000 --name app app-flask:latest 
+  739  docker ps -a
+  740  cur localhost:3000
+  741  minikube ssh
+  742  docker ps -a
+  743  docker image ls
+  744  kubectl get all
+  745  minikube ssh
+  746  kubectl get all -o wide
+  747  minikube ssh
+  748  history >> history05/11.txt
+  749  history >> history0511.txt
