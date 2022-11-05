@@ -13,13 +13,3 @@ spec:
     metadata:
       labels:
         app: my-app
-    spec:
-      containers:
-      - name: app-flask
-        image: localhost:32000/app-flask:latest
-        ports:
-        - containerPort: 3000
-        resources:
-          limits:
-            memory: "256Mi" # 256MB
-            cpu: "200m"     # 200milli cpu (.2 cpu or 20% of cpu)
