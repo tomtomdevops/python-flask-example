@@ -20,6 +20,12 @@ def counter():
     contador += 1
     
     return str(contador)+'\n'
+# Docker buid. -t app-flask:1.0.0
+# Docker buid. -t app-flask:1.0.0
+
+@app.route("/version")
+def version_route():
+    return "2.0.0"   
 
 
 if __name__ == "__main__":
